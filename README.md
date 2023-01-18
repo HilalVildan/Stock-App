@@ -47,4 +47,4 @@ $ yarn start
 
 #### [View Demo](https://stockapp-proj.netlify.app/)
 
-![Demo]()
+![Demo](./src/assets/stockapp.gif)
