@@ -26,7 +26,7 @@ export default function FirmCard({ firm, setOpen, setInfo }) {
       <CardHeader title={firm?.name} subheader={firm?.address} />
       <CardMedia
         image={firm?.image}
-        sx={{ p: 1, objectFit: "contain", height: "130px" }}
+        sx={{ p: 1, objectFit: "contain", minHeight: "100px"}}
         component="img"
         alt="firm-img"
       />
