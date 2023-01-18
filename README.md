@@ -12,13 +12,14 @@ A responsively designed React project where brands and models can be filtered an
 - Formik-Yup
 - React Redux
 - Tremor/react
-<hr />
 
 ### Demo
 
 #### [View Demo](https://stockapp-proj.netlify.app/)
 
 ![Demo](./src/assets/stockapp.gif)
+
+<hr />
 
 ### Installation Options
 
