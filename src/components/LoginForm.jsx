@@ -8,7 +8,7 @@ import * as Yup from "yup";
 
 export const loginSchema = Yup.object().shape({
   email: Yup.string()
-    .email("Please enter valid email")
+    .email("Please enter valid email") // hatada yazilacak seyleri biz kendimiz yazabiliriz. Default olarak da bi seyler yaziyor. 
     .required("Email is mandatory"),
   password: Yup.string()
     .min(8, "Password must have min 8 chars")
@@ -32,8 +32,8 @@ const LoginForm = ({ values, handleChange, errors, touched, handleBlur }) => {
           variant="outlined"
           value={values.email}
           onChange={handleChange}
-          onBlur={handleBlur}
-          helperText={touched.email && errors.email}
+          onBlur={handleBlur} 
+          helperText={touched.email && errors.email} //dokundugunda hatalari göstermek icin
           error={touched.email && Boolean(errors.email)}
         />
         <TextField
@@ -49,7 +49,7 @@ const LoginForm = ({ values, handleChange, errors, touched, handleBlur }) => {
           error={touched.password && Boolean(errors.password)}
         />
         <LoadingButton
-          loading={loading}
+          loading={loading} //authSlice kismindan cektik bunu orda tanimlamistik
           loadingPosition="center"
           variant="contained"
           type="submit"

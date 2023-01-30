@@ -57,7 +57,7 @@ const Login = () => {
             validationSchema={loginSchema}
             onSubmit={(values, actions) => {
               login(values);
-              actions.resetForm();
+              actions.resetForm(); //resetform setsubmiting gibi seyler formigin icinden otomatik olarak geliyor.
               actions.setSubmitting(false);
             }}
             component={(props) => <LoginForm {...props} />}
