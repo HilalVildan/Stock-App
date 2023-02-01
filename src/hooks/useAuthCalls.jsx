@@ -15,7 +15,7 @@ const useAuthCalls = () => { // bu bir hook oldugu icin dosyalarin adinin use il
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const BASE_URL = "https://13105.fullstack.clarusway.com/";
+  const BASE_URL = "https://hilalvildan.pythonanywhere.com/";
 
   const login = async (userInfo) => {
     dispatch(fetchStart());

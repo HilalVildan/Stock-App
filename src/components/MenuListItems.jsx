@@ -46,7 +46,7 @@ const icons = [
   {
     title: "Admin Panel",
     icon: <SupervisorAccountIcon />,
-    url: "https://13105.fullstack.clarusway.com/admin",
+    url: "https://hilalvildan.pythonanywhere.com//admin",
   },
 ];
 

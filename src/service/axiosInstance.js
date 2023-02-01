@@ -4,7 +4,7 @@
 
 import axios from "axios";
 
-const BASE_URL = "https://13105.fullstack.clarusway.com/";
+const BASE_URL = "https://hilalvildan.pythonanywhere.com/";
 
 //* Token'siz api istekleri icin bir instance olustur.
 export const axiosPublic = axios.create({
