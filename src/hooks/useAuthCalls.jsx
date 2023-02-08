@@ -11,7 +11,8 @@ import {
 import { useNavigate } from "react-router-dom";
 import { toastErrorNotify, toastSuccessNotify } from "../helper/ToastNotify";
 
-const useAuthCalls = () => { // bu bir hook oldugu icin dosyalarin adinin use ile baslamasi zorunlu..
+const useAuthCalls = () => {
+  // bu bir hook oldugu icin dosyalarin adinin use ile baslamasi zorunlu..
   const dispatch = useDispatch();
   const navigate = useNavigate();
 

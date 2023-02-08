@@ -46,7 +46,7 @@ const icons = [
   {
     title: "Admin Panel",
     icon: <SupervisorAccountIcon />,
-    url: "https://hilalvildan.pythonanywhere.com//admin",
+    url: "https://hilalvildan.pythonanywhere.com/admin",
   },
 ];
 
@@ -66,7 +66,7 @@ const MenuListItems = () => {
           <ListItem key={index} disablePadding>
             {item.url.includes("http") && (
               <ListItemButton to={item.url} sx={iconStyle}>
-              {/* harici bir link(external link) vermek icin mesela admin panele giderken olan linkin üstüne yazsin istemiyorum
+                {/* harici bir link(external link) vermek icin mesela admin panele giderken olan linkin üstüne yazsin istemiyorum
               baska bir adrese gidecek bu nedenle bu sekilde bir ayrim yaptik. yani item in urlsinde http varsa 
               to yazip harici linke git. asagida !item.url yazarak http yoksa dahili linke git demek istedik. */}
                 <ListItemIcon>{item.icon}</ListItemIcon>

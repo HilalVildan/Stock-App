@@ -39,7 +39,7 @@ const Firms = () => {
   //   }
   // };
 
-  // Firms state'inin muhtemel degisiklikler groe
+  // Firms state'inin muhtemel degisiklikler göre
   useEffect(() => {
     getFirms();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps

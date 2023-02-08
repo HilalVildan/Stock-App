@@ -29,7 +29,7 @@ const store = configureStore({
     stock: stockReducer,
   },
 
-  // serialize ile ilgili hatalari asmakmicin bunu buraya yapistirdim. 
+  // serialize ile ilgili hatalari asmak icin bunu buraya yapistirdim. 
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {

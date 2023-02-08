@@ -11,7 +11,7 @@ export const axiosPublic = axios.create({
   baseURL: BASE_URL,
 });
 
-//* tokeni state üzerinden cagiramam cünku bu bir react componenti degil. 
+//* tokeni state üzerinden cagiramam cünku bu bir react componenti degil.
 //* local storage'dan token'ı oku
 const escapedToken = JSON.parse(localStorage.getItem("persist:root"))?.token;
 const token = escapedToken && JSON.parse(escapedToken); // tokenin seklini düzeltmek icin bi daha JSON.parse yaptik
