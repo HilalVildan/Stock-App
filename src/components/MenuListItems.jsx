@@ -11,6 +11,8 @@ import StarsIcon from "@mui/icons-material/Stars";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import { useNavigate } from "react-router-dom";
+// import { Link } from "react-router-dom";
+
 
 const icons = [
   {
@@ -23,10 +25,16 @@ const icons = [
     icon: <ShoppingCartIcon />,
     url: "/stock/purchases/",
   },
+
   {
     title: "Sales",
     icon: <AttachMoneyIcon />,
     url: "/stock/sales/",
+  },
+  {
+    title: "Products",
+    icon: <InventoryIcon />,
+    url: "/stock/products/",
   },
   {
     title: "Firms",
@@ -38,11 +46,7 @@ const icons = [
     icon: <StarsIcon />,
     url: "/stock/brands/",
   },
-  {
-    title: "Products",
-    icon: <InventoryIcon />,
-    url: "/stock/products/",
-  },
+
   {
     title: "Admin Panel",
     icon: <SupervisorAccountIcon />,
@@ -65,13 +69,20 @@ const MenuListItems = () => {
         {icons?.map((item, index) => (
           <ListItem key={index} disablePadding>
             {item.url.includes("http") && (
-              <ListItemButton to={item.url} sx={iconStyle}>
-                {/* harici bir link(external link) vermek icin mesela admin panele giderken olan linkin üstüne yazsin istemiyorum
+              <a
+                href={item.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none" }}
+              >
+                <ListItemButton sx={iconStyle}>
+                  {/* harici bir link(external link) vermek icin mesela admin panele giderken olan linkin üstüne yazsin istemiyorum
               baska bir adrese gidecek bu nedenle bu sekilde bir ayrim yaptik. yani item in urlsinde http varsa 
               to yazip harici linke git. asagida !item.url yazarak http yoksa dahili linke git demek istedik. */}
-                <ListItemIcon>{item.icon}</ListItemIcon>
-                <ListItemText primary={item.title} />
-              </ListItemButton>
+                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemText primary={item.title} />
+                </ListItemButton>
+              </a>
             )}
 
             {!item.url.includes("http") && (
