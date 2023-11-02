@@ -22,7 +22,7 @@ const Firms = () => {
   // const dispatch = useDispatch(); // dispatcler state e aktarmak icin kullanilir(stockSlice)
 
   // const { token } = useSelector((state) => state.auth);
-  // const BASE_URL = "https://hilalvildan.pythonanywhere.com/";
+  // const BASE_URL = "http://127.0.0.1:8000/";
 
   // const getFirms = async () => {
   //   const url = "firms";

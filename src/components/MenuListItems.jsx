@@ -50,7 +50,7 @@ const icons = [
   {
     title: "Admin Panel",
     icon: <SupervisorAccountIcon />,
-    url: "https://hilalvildan.pythonanywhere.com/admin",
+    url: "http://127.0.0.1:8000/admin/",
   },
 ];
 

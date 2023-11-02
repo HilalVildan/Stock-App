@@ -4,7 +4,7 @@
 
 import axios from "axios";
 
-const BASE_URL = "https://hilalvildan.pythonanywhere.com/";
+const BASE_URL = "http://127.0.0.1:8000/";
 
 //* Token'siz api istekleri icin bir instance olustur.
 export const axiosPublic = axios.create({
